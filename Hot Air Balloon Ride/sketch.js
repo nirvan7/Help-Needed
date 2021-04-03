@@ -23,7 +23,7 @@ function setup() {
  balloon=createSprite(250,400);
  balloon.addAnimation("balloonfly",balloonImg1);
  var balloonPosition=database.ref('balloon/height');
-  balloonPosition.on("value",readPosition,showError);
+ balloonPosition.on("value",readHeight,showError);
 }
 
 function draw() {
